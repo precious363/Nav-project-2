@@ -1,0 +1,72 @@
+/* Reset default margin and padding*/
+.{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* Navigation Bar */
+.navbar{
+    position:fixed;/*Makes it stay on top while scrolling*/
+    top:0;
+    left:0;
+    width:90%;
+    height:5vh;
+    background-color:teal;
+    color:orange;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index:1000;/* ensures navbar stays above all elements*/
+}
+.nav-links{
+    list-style:none;
+    display: flex;
+}
+.nav-links li{
+    margin-left:20px;
+}
+.nav-links a {
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+.nav-links a{
+    color:orange;
+}
+/*Hero Section*/
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4))
+    url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1470&q=80')
+    center/cover;
+    height:100vh;/*full screen height*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top: 60px;/* to prevent text hiding under navbar*/
+}
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px
+}
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+.hero button{
+    background-color:teal;
+    color:orange;
+    border:none;
+    padding:10px 20px;
+    font-size:1rem;
+    cursor:pointer;
+    border-radius:5px;
+}
+.hero button:hover{
+    background-color:#ffb800;
+}
+/*Extra content to test scrolling*/.content{
+    padding:100px 50px;
+    font-size:1.2rem;
+}
