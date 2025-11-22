@@ -36,10 +36,10 @@ body{
 }
 /*Hero Section*/
 .hero{
-    background:linear-gradient(rgba(0,0,0,0.4));
     height:100vh;/*full screen height*/
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
+    text-align: center;
     align-items:center;
     padding-top: 30px;/* to prevent text hiding under navbar*/
 }
@@ -48,23 +48,6 @@ body{
     margin-bottom:10px
 }
 .hero p{
-    font-size:1.2rem;
-    margin-bottom:20px;
-}
-.hero button{
-    background-color:teal;
-    color:orange;
-    border:none;
-    padding:10px 20px;
     font-size:1rem;
-    cursor:pointer;
-    border-radius:5px;
-}
-.hero button:hover{
-    background-color:#ffb800;
-}
-/*Extra content to test scrolling*/
-.content{
-    padding:100px 50px;
-    font-size:1.2rem;
+    margin-bottom:20px;
 }
